@@ -42,7 +42,7 @@ jobs:
       
     - name: Start build
       run: |
-        python3 -m twrpdtgen -o dt/ *.img
+        python3 -m twrpdtgen -o dt/ *.img.1
     - name: ZIP device tree
       run: |
         zip -r DeviceTree.zip ./dt
